@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+
+  ldl:
+    build:
+      context: ./
+      dockerfile: Dockerfile 
+    image: ldl
+    ports:
+      - "8888:8888"
+    runtime: nvidia
+    command: /usr/local/bin/jupyter notebook --port 8888 --no-browser --ip=0.0.0.0 --allow-root
+    volumes:
+      - "./workspace:/workspace/LDL"
+
