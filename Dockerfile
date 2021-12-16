@@ -1,4 +1,4 @@
-ARG FROM_IMAGE_NAME=nvcr.io/nvidia/tensorrt:21.11-py3
+ARG FROM_IMAGE_NAME=nvcr.io/nvidia/cuda:11.4.2-cudnn8-devel-ubuntu20.04
 FROM ${FROM_IMAGE_NAME}
 
 COPY ./requirements.txt /tmp/requirements.txt
