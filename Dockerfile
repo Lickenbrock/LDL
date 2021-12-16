@@ -8,7 +8,7 @@ COPY ./requirements.txt /tmp/requirements.txt
 
 RUN apt-get update && apt-get -y update
 RUN apt-get install -y build-essential python3.6 python3-pip python3-dev git coreutils vim
-#RUN apt-get install -y neofetch  
+  
 RUN pip -q install pip --upgrade
 
 RUN pip install git+https://github.com/NVIDIA/dllogger
