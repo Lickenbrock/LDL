@@ -16,6 +16,8 @@ RUN pip install --disable-pip-version-check -r /tmp/requirements.txt
 
 RUN pip install jupyter
 
-#RUN /opt/tensorrt/python/python_setup.sh
+## Install tensorrt
+
+RUN apt-get -y install python3-libnvinfer-dev
 
 
